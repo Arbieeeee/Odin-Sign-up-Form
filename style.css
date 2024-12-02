@@ -1,7 +1,143 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap");
 
+@font-face {
+  font-family: "Norse-Bold";
+  font-weight: bold;
+  src: url("/assets/Norse-Bold.otf") format("opentype");
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+body {
+  font-family: "Oxygen Mono", serif;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.logo {
+  background-color: transparent;
+  margin-top: 10vw;
+  display: inline-flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px 100%;
+}
+
+.att {
+  color: white;
+  font-size: 9px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.logo > p {
+  font-family: "Norse-Bold";
+  font-weight: bold;
+  font-size: 3rem;
+  padding-left: 2vw;
+  color: white;
+}
+
+.logo img {
+  max-height: 100px;
+}
+
+.container {
+  background-color: whitesmoke;
+  width: 70%;
+  margin: 0 auto;
+  height: 100vh;
+  float: left;
+  padding-top: 10vh;
+}
+
+.left {
+  background-image: url("./assets/insung-yoon-nr9cn7mi9dw-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  width: 30%;
+  height: 100vh;
+}
+
+.container > p {
+  padding: 0 3vw 0 5vw;
+  font-weight: bold;
+  max-width: 60ch;
+}
+
+form {
+  background-color: white;
+
+  padding-bottom: 3vw;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+form > h2 {
+  padding: 3vh 3vw;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3vh 6vw;
+  max-width: 50vw;
+  margin-left: 3vw;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+label {
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+input {
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  grid-column: span 2;
+  padding: 8px 32px;
+  margin: 3vh 3vw;
+  font-size: 14px;
+  line-height: 1.5rem;
+  font-weight: bold;
+  border: none;
+  background-color: #355f2e;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3d6b34;
+}
+
+a {
+  color: #355f2e;
+  text-decoration: none;
+}
+
+.container > p:last-child {
+  font-size: 14px;
 }

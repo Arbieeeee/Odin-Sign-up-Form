@@ -7,38 +7,63 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div>
-      <p>
-        This is not a real online service! You know you need to something like
-        this in your life to help you realize your deepest dreams. Sign up
-        <em>now</em> to get started.
-      </p>
+    <div class="row">
+      <div class="left">
+        <div class="logo">
+          <img src="./assets/odin-lined.png" alt="Odin logo" />
+          <p>Odin</p>
+        </div>
+        <div class="att">
+          <p>Photo by insung yoon on Unsplash</p>
+        </div>
+      </div>
 
-      <p>You know you want to.</p>
+      <div class="container">
+        <p>
+          This is not a real online service! You know you need to something like
+          this in your life to help you realize your deepest dreams. Sign up
+          <em>now</em> to get started.
+        </p>
+        <br />
+        <p>You <em>know</em> you want to.</p>
+        <br /><br />
 
-      <form action="">
-        <section>
+        <form action="" id="createAccount" class="box-shadow">
           <h2>Let's do this!</h2>
-          <label for="fname">First Name</label>
-          <input type="text" name="fname" id="" />
-          <label for="lname">Last Name</label>
-          <input type="text" name="lname" id="" />
-        </section>
-        <section>
-          <label for="mail">Email</label>
-          <input type="email" name="mail" id="" />
-          <label for="phone">Phone Number</label>
-          <input type="number" name="phone" id="" />
-        </section>
-        <section>
-          <label for="pass">Password</label>
-          <input type="text" name="pass" id="" />
-          <label for="r_pass">Confirm Password</label>
-          <input type="text" name="r_pass" id="" />
-        </section>
-        <button type="submit">Create Account</button>
+          <div class="form-container">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first-name" />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last-name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" />
+            </div>
+            <div class="form-group">
+              <label for="phone-number">Phone Number</label>
+              <input type="tel" id="phone-number" name="phone-number" />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" />
+            </div>
+            <div class="form-group">
+              <label for="confirm-password">Confirm Password</label>
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+              />
+            </div>
+          </div>
+        </form>
+        <button type="submit" form="createAccount">Create Account</button>
         <p>Already have an account? <a href="#">Log in</a></p>
-      </form>
+      </div>
     </div>
   </body>
 </html>
