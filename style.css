@@ -111,8 +111,21 @@ label {
 
 input {
   padding: 4px 8px;
-  border: 1px solid #ccc;
   border-radius: 4px;
+}
+
+input:focus {
+  outline: 2px solid steelblue;
+}
+
+input:empty {
+  border: 1px solid #ccc;
+}
+
+input[type="email"]:invalid,
+input[type="tel"]:invalid,
+input[type="password"]:invalid {
+  outline: 1px solid red;
 }
 
 button {

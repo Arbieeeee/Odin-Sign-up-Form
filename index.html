@@ -41,15 +41,25 @@
             </div>
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="email" id="email" name="email" />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+              />
             </div>
             <div class="form-group">
               <label for="phone-number">Phone Number</label>
-              <input type="tel" id="phone-number" name="phone-number" />
+              <input
+                type="tel"
+                pattern="^09\d{9}$"
+                id="phone-number"
+                name="phone-number"
+              />
             </div>
             <div class="form-group">
               <label for="password">Password</label>
-              <input type="password" id="password" name="password" />
+              <input type="password" id="password" name="password" required />
             </div>
             <div class="form-group">
               <label for="confirm-password">Confirm Password</label>
@@ -57,6 +67,7 @@
                 type="password"
                 id="confirm-password"
                 name="confirm-password"
+                required
               />
             </div>
           </div>
